@@ -1,0 +1,67 @@
+.new__content{
+  width: 100%;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 54px;
+  &_box{
+    margin-top: 10px;
+    text-align: center;
+    padding: 0 40px;
+    p{
+      font-size: 12px;
+      color: gray;
+      position: absolute;
+      top: 12px;
+      left: 31px;
+    }
+    .login-input-text{
+      height: 60px;
+      width: 600px;
+      margin: 30px;
+      font-size: 12px;
+      background-color: ghostwhite;
+      border-bottom: solid 1px ;
+      border-bottom:2px solid #cccccc;
+      border-right:none;
+      border-left:none;
+      border-top:none;
+      border-radius:3px;
+    }
+    .login-input-hobun{
+      height:400px;
+      width: 600px;
+      margin: 30px;
+      font-size: 12px;
+      background-color: ghostwhite;
+      border-bottom: solid 1px ;
+      border-bottom:2px solid #cccccc;
+      border-right:none;
+      border-left:none;
+      border-top:none;
+      border-radius:3px;
+    }
+    &_1{
+      position: relative;
+    }
+    &_2{
+      position: relative;
+    }
+    
+    &_btn{
+      &_send{
+        height: 60px;
+        width:600px;
+        margin: 30px;
+        font-size: 12px;
+        border-radius: 30px;
+        background-color: skyblue;
+        color: snow;
+        line-height: 60px;
+        font-size: 20px;
+        font-weight: bold;
+      }
+    }
+  }
+}

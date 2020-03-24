@@ -1,0 +1,16 @@
+.content
+  - @tweets.each do |tweet|
+    .content__tweet
+      .content__tweet_top
+        .content__tweet_top_icon
+        .content__tweet_top_acaunt
+          = tweet.name
+      .content__tweet_iamge
+        .content__tweet_contents
+          syasinn
+          = tweet.image
+      .content__tweet_bottm
+        .content__tweet_comment
+          = tweet.created_at.strftime('%m月%d日')
+          %br/
+          = tweet.text
