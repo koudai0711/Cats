@@ -11,6 +11,19 @@ class TweetsController < ApplicationController
 
   def create
     Tweet.create(tweet_params)
+    redirect_to tweets_path
+  end
+  
+  def update  
+  end
+
+  def edit  
+  end
+
+  def destroy  
+  end
+
+  def show
   end
 
   private
