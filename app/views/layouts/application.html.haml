@@ -14,6 +14,12 @@
       .header__form
         .header__form_box
           検索
-      .header__akaunnto
-        = link_to('新規投稿', 'tweets/new')
+      -if user_signed_in?
+        .user_nav.header__akaunnto
+          = link_to('ログアウト',destroy_user_session_path, method: :delete)
+          = link_to('投稿する', 'tweets/new', class: 'post')
+      -else
+        .header__akaunnto
+          = link_to('ログイン',new_user_session_path, class: 'post')
+          = link_to('新規登録',new_user_registration_path, class: 'post')
     = yield

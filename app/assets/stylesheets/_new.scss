@@ -1,13 +1,14 @@
-.new__content{
+.content{
   width: 100%;
   font-size: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 54px;
-  &_box{
+  &__box{
     margin-top: 10px;
     text-align: center;
+    align-items: center;
     padding: 0 40px;
     p{
       font-size: 12px;
@@ -19,7 +20,7 @@
     .login-input-text{
       height: 60px;
       width: 600px;
-      margin: 30px;
+      margin: 20px;
       font-size: 12px;
       background-color: ghostwhite;
       border-bottom: solid 1px ;
@@ -32,7 +33,7 @@
     .login-input-hobun{
       height:400px;
       width: 600px;
-      margin: 30px;
+      margin: 5px;
       font-size: 12px;
       background-color: ghostwhite;
       border-bottom: solid 1px ;
@@ -45,6 +46,25 @@
     &_1{
       position: relative;
     }
+
+    .image {
+      height: 50px;
+      width: 60px;
+      position: absolute;
+      right: 100px;
+      bottom: 0;
+      text-align: center;
+      line-height: 50px;
+      &_icon{
+        font-size: 25px;
+        color: black;
+        list-style: none;
+        &_file {
+          display: none;
+        }
+      }
+    }
+  
     &_2{
       position: relative;
     }
@@ -53,7 +73,6 @@
       &_send{
         height: 60px;
         width:600px;
-        margin: 30px;
         font-size: 12px;
         border-radius: 30px;
         background-color: skyblue;

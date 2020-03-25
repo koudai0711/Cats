@@ -1,6 +1,6 @@
 class TweetsController < ApplicationController
   before_action :tweet_params, only: [:create]
-
+  
   def index
     @tweets = Tweet.all
   end
