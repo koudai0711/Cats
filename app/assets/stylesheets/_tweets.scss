@@ -44,41 +44,47 @@
 }
 .content{
   width: 100%;
-  padding: 20px 40px;
   margin-top: 54px;
   display: flex;
   flex-wrap: wrap;
+  border-radius: 3px;
   // background-color: skyblue;
   &__tweet{
-    height: 420px;
-    width: 300px;
-    margin: 80px 70px;
-    border: 1px solid #dbdbdb;
+    height: 50%;
+    width: 50%;
+    margin: 30px;
+    margin-bottom: 80px;
     display: block;
-    &_top{
-      height: 40px;
-      width: 298px;
-      background-color:beige;
-      display: flex;
-      &_icon{
-        height: 35px;
-        width: 35px;
-        background-color: peachpuff;
-        border-radius: 100px 
-      }
-      &_acaunt{
-        line-height: 40px;
-        padding-left: 10px;
-      }
+    border-radius: 3px;
+    &_contents{
+      height: 100%;
+      width: 100%;
+    }
+    // &_top{
+    //   height: 40px;
+    //   width: 298px;
+    //   background-color:beige;
+    //   display: flex;
+    //   &_icon{
+    //     height: 35px;
+    //     width: 35px;
+    //     background-color: peachpuff;
+    //     border-radius: 100px 
+    //   }
+    //   &_acaunt{
+    //     line-height: 40px;
+    //     padding-left: 10px;
+    //   }
     }
     &_iamge{
-      height: 300px;
-      width: 300px;
+      display: inline-block;
+      max-width: 100%;
+      border-radius: 3px;
     }
-    &_bottm{
-      height: 78px;
-      width: 298px;
-      background-color:white;
-    }
-  }
+    // &_bottm{
+    //   height: 78px;
+    //   width: 298px;
+    //   background-color:white;
+    // }
 }
+
