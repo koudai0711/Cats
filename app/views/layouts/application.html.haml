@@ -2,15 +2,14 @@
 %html
   %head
     %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
-    %title Naynko
+    %title ねこ
     = csrf_meta_tags
     = csp_meta_tag
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
   %body
     %header.header
-      %h1.header__logo 
-        LOGO
+      = link_to('ねこ','/', class: 'header__logo' )
       .header__form
         .header__form_box
           検索

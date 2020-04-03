@@ -30,6 +30,23 @@
       border-top:none;
       border-radius:3px;
     }
+    .login-input-image{
+      height: 60px;
+      width: 600px;
+      margin: 20px;
+      font-size: 12px;
+      background-color: ghostwhite;
+      border-bottom: solid 1px ;
+      border-bottom:2px solid #cccccc;
+      border-right:none;
+      border-left:none;
+      border-top:none;
+      border-radius:3px;
+      
+    }
+    .file{
+      display: none;
+    }
     .login-input-hobun{
       height:400px;
       width: 600px;
