@@ -1,0 +1,7 @@
+= form.text_field :title,class:"login-input-text",placeholder: "title", id: "text"
+= label class="image_icon"
+  = icon('fas','image')
+  = form.file_field :image, class: "file"
+= form.text_area :text, placeholder: "text" , rows: "10", id: "text",class:"login-input-hobun"
+= form.submit "SEND"
+
