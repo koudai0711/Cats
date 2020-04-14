@@ -5,42 +5,47 @@
   height: 54px;
   width: 100%;
   display: flex;
-  justify-content:space-between ;
-  position: fixed;
-  top:0;
-  z-index: 10;
-  clear: both;
-  border: solid 1px gainsboro;
-  background-color: white;
-  &__logo{
-    height: 54px;
-    width: 30%;
-    font-size: 35px;
-    line-height: 54px;
-    padding-left: 30px;  
-  }
-  &__form{
-    height: 54px;
-    width: 40%;
+  
+  &__inner{
+    width: 100%;
     display: flex;
     justify-content: center;
+    position: fixed;
+    top:0;
+    clear: both;
+    border-bottom: solid 1px gainsboro;
+    background-color: white;
+    line-height: 54px;
+    padding: 0 150px;
     align-items: center;
-    &_box{
+    a{
+      text-decoration: none;
+      color: black;
+    }
+    &_logo{
+      height: 54px;
+      width: 30%;
+      font-size: 35px;
+      line-height: 54px;
+    }
+    &_form{
       height: 27px;
-      width: 100%-50%;
+      width: 200px;
+      font-size: 14px;
       border: solid 1px gainsboro;
-      color: gainsboro;
+      line-height: 54px;
       text-align: center;
+      background-color: honeydew;
+    }
+    &_akaunnto{
+      height: 54px;
+      width: 30%;
+      line-height: 54px;
+      text-decoration: none;
+      line-height: 56px;
+      text-align: right;
     }
   }
-  &__akaunnto{
-    height: 54px;
-    width: 30%;
-    line-height: 54px;
-    padding-left: 90px;
-    text-decoration: none;
-  }
- 
 }
 .content{
   width: 100%;
@@ -50,10 +55,7 @@
   flex-wrap: wrap;
   // background-color: skyblue;
   &__tweet{
-    height: 420px;
-    width: 300px;
-    margin: 80px 70px;
-    border: 1px solid #dbdbdb;
+    margin: 5px 5px;
     display: block;
     &_top{
       height: 40px;

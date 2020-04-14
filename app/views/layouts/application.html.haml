@@ -9,17 +9,15 @@
     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
   %body
     %header.header
-      %h1.header__logo 
-        LOGO
-      .header__form
-        .header__form_box
-          検索
-      -if user_signed_in?
-        .user_nav.header__akaunnto
-          = link_to('ログアウト',destroy_user_session_path, method: :delete)
-          = link_to('投稿する', 'tweets/new', class: 'post')
-      -else
-        .header__akaunnto
-          = link_to('ログイン',new_user_session_path, class: 'post')
-          = link_to('新規登録',new_user_registration_path, class: 'post')
+      .header__inner
+        = link_to('ねこ','/', class: 'header__inner_logo' )
+        %input.header__inner_form{placeholder: "検索", type: "text" }/
+        -if user_signed_in?
+          .header__inner_akaunnto
+            = link_to('ログアウト',destroy_user_session_path, method: :delete)
+            = link_to('投稿する', 'tweets/new', class: 'post')
+        -else
+          .header__inner_akaunnto
+            = link_to('ログイン',new_user_session_path, class: 'post')
+            = link_to('新規登録',new_user_registration_path, class: 'post')
     = yield
