@@ -47,40 +47,44 @@
     }
   }
 }
-.content{
+.main{
   width: 100%;
-  padding: 20px 40px;
+  height: 100%;
   margin-top: 54px;
-  display: flex;
-  flex-wrap: wrap;
-  // background-color: skyblue;
-  &__tweet{
-    margin: 5px 5px;
-    display: block;
-    &_top{
-      height: 40px;
-      width: 298px;
-      background-color:beige;
-      display: flex;
-      &_icon{
-        height: 35px;
-        width: 35px;
-        background-color: peachpuff;
-        border-radius: 100px 
+  text-align: center;
+  &__content{
+    width: 66%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    &_tweet{
+      margin: 5px 5px;
+      display: block;
+      &_top{
+        height: 40px;
+        width: 298px;
+        background-color:beige;
+        display: flex;
+        &_icon{
+          height: 35px;
+          width: 35px;
+          background-color: peachpuff;
+          border-radius: 100px 
+        }
+        &_acaunt{
+          line-height: 40px;
+          padding-left: 10px;
+        }
       }
-      &_acaunt{
-        line-height: 40px;
-        padding-left: 10px;
+      &_iamge{
+        height: 300px;
+        width: 300px;
       }
-    }
-    &_iamge{
-      height: 300px;
-      width: 300px;
-    }
-    &_bottm{
-      height: 78px;
-      width: 298px;
-      background-color:white;
+      &_bottm{
+        height: 78px;
+        width: 298px;
+        background-color:white;
+      }
     }
   }
 }

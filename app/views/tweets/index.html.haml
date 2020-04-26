@@ -1,18 +1,7 @@
-.content
-  - @tweets.each do |tweet|
-    .content__tweet
-      -# .content__tweet_top
-      -#   .content__tweet_top_icon
-      -#   .content__tweet_top_acaunt
-      -#     = tweet.name
-
-      -# 三つ写真を入れて一箱になるボックスを縦に並べていく
-      .content__tweet_iamge
-        .content__tweet_contents
-        = image_tag "cat-2083492_640.jpg", size: "298x298", alt: "test"
-
-      -# .content__tweet_bottm
-      -#   .content__tweet_comment
-      -#     = tweet.created_at.strftime('%m月%d日')
-      -#     %br/
-      -#     = tweet.text
+.main
+  .main__content
+    - @tweets.each do |tweet|
+      .main__content_tweet
+        .main__content_tweet_iamge
+          .main__content_tweet_contents
+          = image_tag "cat-2083492_640.jpg", size: "298x298", alt: "test"
