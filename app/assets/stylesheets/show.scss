@@ -1,90 +1,39 @@
-.content{
-  &_image{
-    height: 100%;
-    width: 100%;
-    display: flex;
-    &_big{
-      height: 400px;
-      width: 50%;
-      background-color: #fcf;
+.show{
+  &__content{
+    &_image{
+      height: 100%;
       width: 100%;
-      font-size: 20px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
       margin-top: 54px;
-    }
-  }
-  &__box{
-    margin-top: 10px;
-    text-align: center;
-    align-items: center;
-    padding: 0 40px;
-    p{
-      font-size: 12px;
-      color: gray;
-      position: absolute;
-      top: 12px;
-      left: 31px;
-    }
-    .login-input-text{
-      height: 60px;
-      width: 600px;
-      margin: 20px;
-      font-size: 12px;
-      background-color: ghostwhite;
-      border-bottom: solid 1px ;
-      border-bottom:2px solid #cccccc;
-      border-right:none;
-      border-left:none;
-      border-top:none;
-      border-radius:3px;
-    }
-    .login-input-image{
-      height: 60px;
-      width: 600px;
-      margin: 20px;
-      font-size: 12px;
-      background-color: ghostwhite;
-      border-bottom: solid 1px ;
-      border-bottom:2px solid #cccccc;
-      border-right:none;
-      border-left:none;
-      border-top:none;
-      border-radius:3px;
-      
-    }
-    .file{
-      display: none;
-    }
-    .login-input-hobun{
-      height:400px;
-      width: 600px;
-      margin: 5px;
-      font-size: 12px;
-      background-color: ghostwhite;
-      border-bottom: solid 1px ;
-      border-bottom:2px solid #cccccc;
-      border-right:none;
-      border-left:none;
-      border-top:none;
-      border-radius:3px;
-    }
-    &_small{
-      height: 400px;
-      width: 50%;
-      margin: 0;
-      padding: 10px;
-      display: flex;
-      flex-wrap: wrap;
-      background-color: #fcc;
-      li{
-        list-style: none;
-        width: 47%;
-        margin: 7px;
-        .img{
-          height: 175px;
-          width: 100%;
+      &_big{
+        height: 410px;
+        width: 50%;
+        background-color: whitesmoke;
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        img{
+          height: 390px;
+          width: 540px;
+        }
+      }
+      &_small{
+        height: 120px;
+        width: 50%;
+        padding: 0 0 0 5px;
+        display: flex;
+        flex-wrap: wrap;
+        background-color: whitesmoke;
+        margin: 0 auto;
+        li{
+          list-style: none;
+          width: 23%;
+          margin: 5px;
+          .img{
+            height: 100px;
+            width: 100%;
+          }
         }
       }
     }
