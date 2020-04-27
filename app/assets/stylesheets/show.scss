@@ -1,0 +1,41 @@
+.show{
+  &__content{
+    &_image{
+      height: 100%;
+      width: 100%;
+      margin-top: 54px;
+      &_big{
+        height: 410px;
+        width: 50%;
+        background-color: whitesmoke;
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        img{
+          height: 390px;
+          width: 540px;
+        }
+      }
+      &_small{
+        height: 120px;
+        width: 50%;
+        padding: 0 0 0 5px;
+        display: flex;
+        flex-wrap: wrap;
+        background-color: whitesmoke;
+        margin: 0 auto;
+        li{
+          list-style: none;
+          width: 23%;
+          margin: 5px;
+          .img{
+            height: 100px;
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
