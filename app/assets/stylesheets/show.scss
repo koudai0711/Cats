@@ -37,5 +37,38 @@
         }
       }
     }
+    &_description {
+      width: 50%;
+      margin: 0 auto;
+      &_top {
+        line-height: 1.5;
+        font-size: 18px;
+        margin-bottom: 30px;
+        table {
+          margin-top: 20px;
+          width: 100%;
+          height: 375px;
+          border-collapse: collapse;
+          border: 1px solid #f8f8f8;
+          tbody {
+            th {
+              width: 20%;
+              background-color: #eee;
+              font-weight: 400;
+              padding: 8px;
+              border: 1px solid #dedede;
+              font-size: 14px;
+              text-align: center;
+            }
+            td {
+              width: 61%;
+              padding: 15px 15px;
+              border: 1px solid #dedede;
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
   }
 }
