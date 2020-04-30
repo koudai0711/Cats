@@ -1,7 +1,8 @@
 .main
   .main__content
     - @tweet.each do |t|
-      .main__content_tweet
-        .main__content_tweet_iamge
-          .main__content_tweet_contents
-          = image_tag "cat-2083492_640.jpg", size: "298x298", alt: "test"
+      = link_to tweet_path(t.id) do
+        .main__content_tweet
+          .main__content_tweet_iamge
+            .main__content_tweet_contents
+            = image_tag "#{t.images.first.image}", size: "298x298", alt: "test"
