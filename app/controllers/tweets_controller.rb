@@ -4,11 +4,12 @@ class TweetsController < ApplicationController
   before_action :set_tweet, only: [:edit, :show]
   before_action :sets_tweet, only: [:update, :destroy]
   def index
-    @tweets = Tweet.includes(:user).order("created_at DESC")
+    @tweet = Tweet.includes(:user).order("created_at DESC")
   end
 
   def new
-    @tweets = Tweet.new
+    @tweet = Tweet.new
+    3.times { @tweet.images.build }
   end
 
   def create
@@ -32,7 +33,7 @@ class TweetsController < ApplicationController
 
   private
   def tweet_params
-    params.require(:tweet).permit(:name, :text, :image).merge(user_id: current_user.id)
+    params.require(:tweet).permit(:name, :text, images_attributes: [:image]).merge(user_id: current_user.id)
   end
 
   def move_to_index

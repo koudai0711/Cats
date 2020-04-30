@@ -2,17 +2,13 @@
   .content__box
     .content__box_1
       .form
-        = form_for @tweets do |f|
+        = form_for @tweet do |f|
           .title_1
             = f.text_field :name, class:'login-input-text',placeholder: "input", type: "text"
-            = f.text_field :image,class:'login-input-text',placeholder: "Image Url" 
+            = f.fields_for :images do |i|
+              = i.file_field :image, class:'login-input-text', placeholder: "Image Url" 
           .content__box_2
             .title_2
               = f.text_area :text, class:'login-input-hobun',row:"20", clos:"50",id: "t_message",type:"text"
           .content__box_btn
             = f.submit 'SEND',class: 'content__box_btn_send'
-      
-      
--#       -# 募集に至った事情
--#       -# 性格や特徴健康状態ワクチン接種、去勢手術の有無その他
-
