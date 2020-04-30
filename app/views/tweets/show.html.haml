@@ -2,16 +2,11 @@
   .show__content
     .show__content_image
       .show__content_image_big
-        = image_tag "cat-2083492_640.jpg",class: "img", alt: "test", size: "400×250"
+        = image_tag "#{@tweet.images.first.image}",class: "img", alt: "test", size: "400×250"
       %ul.show__content_image_small
-        %li
-          = image_tag "cat-2083492_640.jpg",class: "img", alt: "test"
-        %li
-          = image_tag "cat-2083492_640.jpg",class: "img", alt: "test"
-        %li
-          = image_tag "cat-2083492_640.jpg",class: "img", alt: "test"
-        %li
-          = image_tag "cat-2083492_640.jpg",class: "img", alt: "test"
+        - @tweet.images.each do |t|        
+          %li
+            = image_tag t.image.url, class: "img", alt: "test",size: "100×125"
     .show__content_description
       .show__content_description_top
         %table
@@ -19,11 +14,11 @@
             %tr
             %th 出品者
             %td 
-              森下
+              = @tweet.name
             %tr
             %th 募集経緯
             %td
-              三毛猫  
+              = @tweet.text
             %tr
             %th 性格・特徴
             %td
