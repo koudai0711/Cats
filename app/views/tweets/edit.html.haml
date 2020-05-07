@@ -1,5 +1,13 @@
-.contents 
-  .containe  
-  = form_with(model: @tweet, local: true) do |form| 
-    %h3編集する
-      = render partial: "form", locals: { form: form } 
+.content
+  .content__box
+    .content__box_1
+      .form
+        = form_for @tweet do |f|
+          .title_1
+            = f.text_field :name, class:'login-input-text',placeholder: "input", type: "text"
+            = f.file_field :image, class:'login-input-text', placeholder: "Image Url" 
+          .content__box_2
+            .title_2
+              = f.text_area :text, class:'login-input-hobun',row:"20", clos:"50",id: "t_message",type:"text"
+          .content__box_btn
+            = f.submit '編集する',class: 'content__box_btn_send'

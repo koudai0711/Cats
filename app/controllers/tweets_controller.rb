@@ -9,19 +9,19 @@ class TweetsController < ApplicationController
 
   def new
     @tweet = Tweet.new
-    3.times { @tweet.images.build }
   end
 
   def create
     Tweet.create(tweet_params)
     redirect_to tweets_path
   end
-  
-  def update
-    tweet.update(tweet_params)
-  end
 
   def edit
+  end
+
+  def update
+    tweet = Tweet.find(params[:id])
+    tweet.update(tweet_params)
   end
 
   def destroy
@@ -34,7 +34,7 @@ class TweetsController < ApplicationController
 
   private
   def tweet_params
-    params.require(:tweet).permit(:name, :text, images_attributes: [:image]).merge(user_id: current_user.id)
+    params.require(:tweet).permit(:name, :text, :image).merge(user_id: current_user.id)
   end
 
   def move_to_index
