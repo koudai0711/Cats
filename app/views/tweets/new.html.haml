@@ -5,10 +5,9 @@
         = form_for @tweet do |f|
           .title_1
             = f.text_field :name, class:'login-input-text',placeholder: "input", type: "text"
-            = f.fields_for :images do |i|
-              = i.file_field :image, class:'login-input-text', placeholder: "Image Url" 
+            = f.file_field :image, class:'login-input-text', placeholder: "Image Url" 
           .content__box_2
             .title_2
               = f.text_area :text, class:'login-input-hobun',row:"20", clos:"50",id: "t_message",type:"text"
           .content__box_btn
-            = f.submit 'SEND',class: 'content__box_btn_send'
+            = f.submit '投稿する',class: 'content__box_btn_send'

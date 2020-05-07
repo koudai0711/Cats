@@ -2,11 +2,11 @@
   .show__content
     .show__content_image
       .show__content_image_big
-        = image_tag "#{@tweet.images.first.image}",class: "img", alt: "test", size: "400×250"
-      %ul.show__content_image_small
-        - @tweet.images.each do |t|        
-          %li
-            = image_tag t.image.url, class: "img", alt: "test",size: "100×125"
+        = image_tag "#{@tweet.image}",class: "img", alt: "test", size: "400×250"
+      -# %ul.show__content_image_small
+      -#   - @tweet.images.each do |t|        
+      -#     %li
+      -#       = image_tag t.image.url, class: "img", alt: "test",size: "100×125"
     .show__content_description
       .show__content_description_top
         %table
@@ -31,6 +31,6 @@
             %th 引渡し方法
             %td 
     .show__content_edit
-      = link_to "情報を編集", '#'
+      = link_to "情報を編集", edit_tweet_path(@tweet.id)
       = link_to "情報を削除する", tweet_path(@tweet.id),method: :delete 
         
