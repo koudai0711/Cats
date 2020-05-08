@@ -32,6 +32,10 @@ class TweetsController < ApplicationController
   def show
   end
 
+  def search
+    @tweet = Tweet.search(params[:keyword])
+  end
+
   private
   def tweet_params
     params.require(:tweet).permit(:name, :text, :image).merge(user_id: current_user.id)

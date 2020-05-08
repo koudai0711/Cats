@@ -1,0 +1,50 @@
+* {
+  box-sizing: border-box;
+}
+.header{
+  height: 54px;
+  width: 100%;
+  display: flex;
+  
+  &__inner{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    top:0;
+    clear: both;
+    background-color: white;
+    line-height: 54px;
+    padding: 0 150px;
+    align-items: center;
+    a{
+      text-decoration: none;
+      color: black;
+    }
+    &_logo{
+      height: 54px;
+      width: 30%;
+      font-size: 35px;
+      line-height: 54px;
+    }
+    &_form{
+      height: 27px;
+      width: 200px;
+      font-size: 14px;
+      border: solid 1px gainsboro;
+      line-height: 54px;
+      text-align: center;
+      background-color: honeydew;
+    }
+    &_akaunnto{
+      height: 54px;
+      width: 30%;
+      line-height: 54px;
+      text-decoration: none;
+      line-height: 56px;
+      text-align: right;
+    }
+  }
+}
+
+
