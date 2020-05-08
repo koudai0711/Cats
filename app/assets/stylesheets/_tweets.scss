@@ -1,50 +1,41 @@
-* {
-  box-sizing: border-box;
-}
-.header{
-  height: 54px;
+.main{
   width: 100%;
-  display: flex;
-  
-  &__inner{
-    width: 100%;
+  height: 100%;
+  margin-top: 54px;
+  text-align: center;
+  &__content{
+    width: 66%;
     display: flex;
-    justify-content: center;
-    position: fixed;
-    top:0;
-    clear: both;
-    background-color: white;
-    line-height: 54px;
-    padding: 0 150px;
-    align-items: center;
-    a{
-      text-decoration: none;
-      color: black;
-    }
-    &_logo{
-      height: 54px;
-      width: 30%;
-      font-size: 35px;
-      line-height: 54px;
-    }
-    &_form{
-      height: 27px;
-      width: 200px;
-      font-size: 14px;
-      border: solid 1px gainsboro;
-      line-height: 54px;
-      text-align: center;
-      background-color: honeydew;
-    }
-    &_akaunnto{
-      height: 54px;
-      width: 30%;
-      line-height: 54px;
-      text-decoration: none;
-      line-height: 56px;
-      text-align: right;
+    flex-wrap: wrap;
+    margin: auto;
+    &_tweet{
+      margin: 5px 5px;
+      display: block;
+      &_top{
+        height: 40px;
+        width: 298px;
+        background-color:beige;
+        display: flex;
+        &_icon{
+          height: 35px;
+          width: 35px;
+          background-color: peachpuff;
+          border-radius: 100px 
+        }
+        &_acaunt{
+          line-height: 40px;
+          padding-left: 10px;
+        }
+      }
+      &_iamge{
+        height: 300px;
+        width: 300px;
+      }
+      &_bottm{
+        height: 78px;
+        width: 298px;
+        background-color:white;
+      }
     }
   }
 }
-
-
