@@ -4,10 +4,13 @@
       .form
         = form_with(model: @tweet, local: true) do |f|
           .title_1
-            = f.text_field :name, class:'login-input-text',placeholder: "input", type: "text"
             = f.file_field :image, class:'login-input-text', placeholder: "Image Url" 
+            %i.fas.fa-camera
           .content__box_2
             .title_2
-              = f.text_area :text, class:'login-input-hobun',row:"20", clos:"50",id: "t_message",type:"text"
+              = f.text_area :back, class:'login-input-hobun', placeholder: "募集経緯",row:"20", clos:"50",id: "t_message",type:"text"
+              = f.text_area :personal, class:'login-input-hobun', placeholder: "性格・特徴",row:"20", clos:"50",id: "t_message",type:"text"
+              = f.text_area :health, class:'login-input-hobun', placeholder: "健康状態",row:"20", clos:"50",id: "t_message",type:"text"
+              = f.text_area :method, class:'login-input-hobun', placeholder: "引渡し方法",row:"20", clos:"50",id: "t_message",type:"text"
           .content__box_btn
             = f.submit '投稿する',class: 'content__box_btn_send'
