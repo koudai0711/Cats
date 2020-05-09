@@ -33,6 +33,7 @@ class TweetsController < ApplicationController
   end
 
   def show
+    @user = User.find(params[:id]) 
   end
 
   def search
@@ -41,7 +42,7 @@ class TweetsController < ApplicationController
 
   private
   def tweet_params
-    params.require(:tweet).permit(:name, :text, :image).merge(user_id: current_user.id)
+    params.require(:tweet).permit(:back, :personal, :health, :method, :image).merge(user_id: current_user.id)
   end
 
   def move_to_index

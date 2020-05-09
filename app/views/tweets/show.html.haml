@@ -12,24 +12,25 @@
         %table
           %tbody
             %tr
-            %th 出品者
+            %th 応募者
             %td 
-              = @tweet.name
+              = @user.name
             %tr
             %th 募集経緯
             %td
-              = @tweet.text
+              = @tweet.back
             %tr
             %th 性格・特徴
             %td
-                
+              = @tweet.personal
             %tr
             %th 健康状態
             %td 
-                
+              = @tweet.health
             %tr
             %th 引渡し方法
             %td 
+              = @tweet.method
     .show__content_edit
       = link_to "情報を編集", edit_tweet_path(@tweet.id)
       = link_to "情報を削除する", tweet_path(@tweet.id),method: :delete 
