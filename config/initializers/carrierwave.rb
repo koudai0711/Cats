@@ -13,8 +13,8 @@ CarrierWave.configure do |config|
     region: 'ap-northeast-1'
   }
 
-  config.fog_directory = 'cats0711' if Rails.env.production?
-  config.fog_directory = 'https://s3-ap-northeast-1.amazonaws.com/cats0711' if Rails.env.development?
+  config.fog_directory = 'cats0711'
+  config.fog_directory = 'https://s3-ap-northeast-1.amazonaws.com/cats0711' 
 
 # 下の記載はローカル環境からS3に保存するもの仮置き
   # config.fog_directory  = 'freemarket72h'
