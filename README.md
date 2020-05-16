@@ -1,24 +1,31 @@
-# README
+## 概要
+猫の里親募集アプリです
+実装機能は下記のとおりです
+・記事一覧表示機能
+・記事詳細表示機能
+・記事投稿機能
+・記事編集機能
+・記事削除機能
+・管理ユーザー登録機能
+・管理ユーザーログイン機能
+・画像アップロード機能
+・DBテーブルのリレーション管理
+使用言語
+・Ruby
+・Ruby on rails
+・HAML
+・SCSS
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Description
+このアプリは基本の使用は猫の画像投稿アプリとして活用して、猫を愛でることがメインです。
+可愛い猫を見ていくうちに、この子可愛いな飼いたいなと思っていただき、里親さんをマッチングを行う
+## Demo
 
-Things you may want to cover:
+## VS. 
+現段階では里親募集のサイトはいくつもあるが、このアプリは基本写真をメインにして、もともと里親をしてみたい人以外の層を対象とするもの
+トップページでは写真のみを表示し、可愛い猫を愛でていただくことがメインとなります
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## Usage
+URL 13.112.192.43
+## Install
+トップページから投稿する際は、ユーザーのログインが必要となる
