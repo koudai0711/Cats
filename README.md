@@ -1,3 +1,5 @@
+## アプリ名
+Cats
 ## 概要
 猫の里親募集アプリです
 
@@ -20,17 +22,33 @@
 ・Ruby on rails  
 ・HAML  
 ・SCSS  
+## 制作背景
+猫の里親サイトの利用者層を増やすためです。  
+既存の里親募集のサイトでは、猫を飼いたい層しか閲覧しませんが、猫投稿用のサイトを作成することで基本は猫を見て癒されるサイトとして運用し、いつも見ているこの猫かわいいなと思ってもらったらそこから里親になってもらうことが目的です。  
 
-## Description
-このアプリは基本の使用は猫の画像投稿アプリとして活用して、猫を愛でることがメインです。
-可愛い猫を見ていくうちに、この子可愛いな飼いたいなと思っていただき、里親さんをマッチングを行う
-## Demo
+## DEMO
+## 実装予定の内容
+投稿ごとにタグ機能をつけてタグ検索をできるようにしていこうと思っています
 
-## VS. 
-現段階では里親募集のサイトはいくつもあるが、このアプリは基本写真をメインにして、もともと里親をしてみたい人以外の層を対象とするもの
-トップページでは写真のみを表示し、可愛い猫を愛でていただくことがメインとなります
+## DB設計
+## usersテーブル
+|Column|Type|Options|
+|------|----|-------|
+|email|string|null: false|
+|encrypted_password|string|null: false|
+|name|string|null: false|
+### Association
+- has_many :tweets
 
-## Usage
-URL 13.112.192.43
-## Install
-トップページから投稿する際は、ユーザーのログインが必要となる
+## tweetsテーブル
+|Column|Type|Options|
+|------|----|-------|
+|back|string|null: false|
+|personal|string|null: false|
+|health|string|null: false|
+|method|string|null: false|
+|image|string|null: false|
+|user_id|integer|null: false|
+
+### Association
+- belongs_to :user
