@@ -31,7 +31,8 @@
             %th 引渡し方法
             %td 
               = @tweet.method
-    .show__content_edit
-      = link_to "情報を編集", edit_tweet_path(@tweet.id)
-      = link_to "情報を削除する", tweet_path(@tweet.id),method: :delete 
-        
+    -if user_signed_in? && current_user.id == @tweet.user.id 
+      .show__content_edit
+        = link_to "情報を編集", edit_tweet_path(@tweet.id)
+        = link_to "情報を削除する", tweet_path(@tweet.id),method: :delete 
+          
