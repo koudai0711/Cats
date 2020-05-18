@@ -28,7 +28,7 @@ Cats
 
 ## DEMO
 
-![kaboompics_cosy workplace](https://gyazo.com/93318dbec745d1bcd2797879dc2915e2)
+https://gyazo.com/93318dbec745d1bcd2797879dc2915e2
 
 ## 実装予定の内容
 投稿ごとにタグ機能をつけてタグ検索をできるようにしていこうと思っています
