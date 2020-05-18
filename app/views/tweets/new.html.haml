@@ -5,7 +5,6 @@
         = form_with(model: @tweet, local: true) do |f|
           .title_1
             = f.file_field :image, class:'login-input-text', placeholder: "Image Url" 
-            %i.fas.fa-camera
           .content__box_2
             .title_2
               = f.text_area :back, class:'login-input-hobun', placeholder: "募集経緯",row:"20", clos:"50",id: "t_message",type:"text"
