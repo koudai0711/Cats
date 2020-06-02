@@ -17,9 +17,12 @@
               %i (英数字8文字以上)
             .field-input
               = f.password_field :password, autocomplete: "off"
+            テストアカウント
+            cats@gmail.com
+          パスワード
+          aaaaaaaa  
           .actions
             = f.submit "Log in", class: 'btn'
-          テストアカウント
-          cats@gmail.com
-          password  
-          aaaaaaaa  
+      = render 'testuser'
+
+          
